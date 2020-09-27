@@ -16,21 +16,16 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn
-      - run: yarn run build
-      - run: yarn run test
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: 'https://npm.pkg.github.com/'
+          registry-url: 'https://npm.pkg.github.com'
           scope: '@dhavalptl'
-      - run: yarn
-      - run: yarn run lerna:publish
+      - name: Install packages
+        run: yarn
+      - name: Build
+        run: yarn run build
+      - name: Test
+        run: yarn run test
+      - name: Publish
+        run: yarn run lerna:publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.G_TOKEN}}
   
