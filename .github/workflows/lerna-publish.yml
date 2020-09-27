@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn run bootstrap
+      - run: yarn
       - run: yarn run build
       - run: yarn run test
   
