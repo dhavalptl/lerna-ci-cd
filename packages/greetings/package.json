@@ -1,0 +1,14 @@
+{
+  "name": "@dhavalptl/greetings",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "yarn run clear && tsc",
+    "clear": "rm -rf ./lib"
+  },
+  "files": ["lib/"]
+}
