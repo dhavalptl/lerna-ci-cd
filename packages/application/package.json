@@ -1,6 +1,6 @@
 {
   "name": "@dhavalptl/application",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -14,7 +14,7 @@
     "lib/"
   ],
   "dependencies": {
-    "@dhavalptl/greetings": "^1.0.1"
+    "@dhavalptl/greetings": "^1.0.2"
   },
   "repository": {
     "type": "git",
