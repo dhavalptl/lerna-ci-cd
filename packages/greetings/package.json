@@ -1,6 +1,6 @@
 {
   "name": "@dhavalptl/greetings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -10,7 +10,9 @@
     "build": "yarn run clear && tsc",
     "clear": "rm -rf ./lib"
   },
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dhavalptl/lerna-ci-cd.git",
