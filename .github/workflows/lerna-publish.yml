@@ -25,7 +25,11 @@ jobs:
       - name: Test
         run: yarn run test
       - name: Publish
-        run: yarn run lerna:publish
+        run: |
+          git config --global user.email ${{secrets.G_EMAIL}}
+          git config --global user.name ${{secrets.G_NAME}}
+          git remote set-url origin https://${{secrets.G_TOKEN}}github.com/dhavalptl/lerna-ci-cd.git
+          yarn run lerna:publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.G_TOKEN}}
   
