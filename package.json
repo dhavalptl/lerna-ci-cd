@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "@dhavalptl/lerna-ci-cd",
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.11.6",

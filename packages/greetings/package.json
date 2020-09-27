@@ -10,5 +10,14 @@
     "build": "yarn run clear && tsc",
     "clear": "rm -rf ./lib"
   },
-  "files": ["lib/"]
+  "files": ["lib/"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhavalptl/lerna-ci-cd.git",
+    "directory": "packages/greetings"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  }
 }
