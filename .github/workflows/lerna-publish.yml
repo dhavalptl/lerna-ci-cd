@@ -30,7 +30,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@dhavalptl'
       - run: yarn
-      - run: yarn run publish
+      - run: yarn run lerna:publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
   
