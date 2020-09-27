@@ -16,6 +16,8 @@
   ],
   "scripts": {
     "test": "lerna run test --stream --parallel",
-    "build": "lerna run build --stream"
+    "build": "lerna run build --stream",
+    "bootstrap": "lerna bootstrap",
+    "lerna:publish": "lerna publish"
   }
 }
