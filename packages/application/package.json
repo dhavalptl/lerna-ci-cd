@@ -1,6 +1,6 @@
 {
   "name": "@dhavalptl/application",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -10,9 +10,11 @@
     "build": "yarn run clear && tsc",
     "clear": "rm -rf ./lib"
   },
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "dependencies": {
-    "@dhavalptl/greetings": "^1.0.0"
+    "@dhavalptl/greetings": "^1.0.1"
   },
   "repository": {
     "type": "git",
